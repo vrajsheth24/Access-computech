@@ -18587,6 +18587,10 @@ input:focus {
   border-radius: 50px !important;
 }
 
+.br-10{
+  border-radius: 10px !important;
+}
+
 .access-news {
   font-size: 18px;
   line-height: 1.2;
@@ -18873,6 +18877,56 @@ input:focus {
   background-size: contain;
   z-index: 0;
   background-repeat: no-repeat;
+}
+
+.product-features.turnstile::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  width: 180px;
+  height: 80%;
+  background-image: url(../images/access-computech/product/access-control/Tripod-3338/turnstile.png);
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.product-features.card-swipe::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  width: 150px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/access-control/Tripod-3338/credit-card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product-features.rugged::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  width: 210px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/access-control/Tripod-3338/metal-bar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product-features.alarm::before {
+  content: "";
+  position: absolute;
+  /* bottom: -20px; */
+  right: 30px;
+  width: 130px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/access-control/Tripod-3338/alarm.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .unfog-logo {
@@ -19373,13 +19427,44 @@ input:focus {
   -webkit-box-orient: vertical;
 }
 
+.mb--60{
+  margin-bottom: -60px !important;
+}
 
+.pe-70{
+  padding-right: 70px !important;
+}
+
+.smart-icon{
+  max-width: 50px;
+}
+
+.check-icon{
+  max-width: 40px;
+}
+
+.bgcolor-f2f2f2 {
+  background-color: #F2F2F2 !important;
+}
+
+.fc-block p{
+  padding: 30px 72px;
+}
+.fc-height{
+  min-height: 800px !important;
+  max-height: 1000px;
+  left: -70px;
+  top: -50px;
+}
 
 
 @media screen and (max-width: 1399px) {
   .intro4-content__text {
     font-size: 20px;
   }
+  .fc-block p{
+  padding: 30px 30px;
+}
 
   .contact-footer {
     display: grid;
@@ -19399,6 +19484,8 @@ input:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  
 
   .p-100 {
     padding: 0px !important;
@@ -19421,6 +19508,17 @@ input:focus {
 
 @media screen and (max-width: 991px) {
 
+
+  .fc-height{
+  min-height: 0px !important;
+  max-height: 1000px;
+  left: 0;
+  top: 0px;
+}
+
+  .pe-70{
+    padding-right: 0px !important;
+  }
 
   .footer-menu-item {
     padding-top: 20px;
