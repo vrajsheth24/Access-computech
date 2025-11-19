@@ -18437,7 +18437,7 @@ input:focus {
   bottom: -200px;
 }
 
-.about-img2 img{
+.about-img2 img {
   aspect-ratio: 1.9;
 }
 
@@ -18587,7 +18587,7 @@ input:focus {
   border-radius: 50px !important;
 }
 
-.br-10{
+.br-10 {
   border-radius: 10px !important;
 }
 
@@ -18891,6 +18891,18 @@ input:focus {
   z-index: 0;
   background-repeat: no-repeat;
 }
+.product-features.adaptable::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  width: 180px;
+  height: 80%;
+  background-image: url(../images/access-computech/product/pos/f210/smartphone.png);
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
 
 .product-features.card-swipe::before {
   content: "";
@@ -18904,6 +18916,19 @@ input:focus {
   background-repeat: no-repeat;
   z-index: 1;
 }
+.product-features.ready::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 30px;
+  width: 150px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/pos/f210/reload.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .product-features.rugged::before {
   content: "";
   position: absolute;
@@ -18916,6 +18941,7 @@ input:focus {
   background-repeat: no-repeat;
   z-index: 1;
 }
+
 .product-features.alarm::before {
   content: "";
   position: absolute;
@@ -19420,26 +19446,26 @@ input:focus {
 }
 
 
-.line-clamp-2{
+.line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-.mb--60{
+.mb--60 {
   margin-bottom: -60px !important;
 }
 
-.pe-70{
+.pe-70 {
   padding-right: 70px !important;
 }
 
-.smart-icon{
+.smart-icon {
   max-width: 50px;
 }
 
-.check-icon{
+.check-icon {
   max-width: 40px;
 }
 
@@ -19447,24 +19473,49 @@ input:focus {
   background-color: #F2F2F2 !important;
 }
 
-.fc-block p{
+.fc-block p {
   padding: 30px 72px;
 }
-.fc-height{
+.fc-block2 div {
+  padding: 50px 40px;
+}
+.fc-block3 p {
+  padding: 30px 50px;
+}
+
+.fc-height {
   min-height: 800px !important;
   max-height: 1000px;
   left: -70px;
   top: -50px;
 }
 
+.transform-scale-1-2 {
+  transform: scale(1.2);
+}
+
+.bg-light-yellow{
+  background-color: #F2FF9C !important;
+}
+
+.w-60{
+  width: 60% !important;
+}
+
+.f210-feat .feat-icon img{
+  width: 80px;
+}
+
+
 
 @media screen and (max-width: 1399px) {
   .intro4-content__text {
     font-size: 20px;
   }
-  .fc-block p{
-  padding: 30px 30px;
-}
+
+  .fc-block p {
+    padding: 30px 30px;
+  }
 
   .contact-footer {
     display: grid;
@@ -19485,7 +19536,7 @@ input:focus {
     gap: 20px;
   }
 
-  
+
 
   .p-100 {
     padding: 0px !important;
@@ -19508,15 +19559,22 @@ input:focus {
 
 @media screen and (max-width: 991px) {
 
+  .mb--60{
+    margin-bottom: 0;
+  }
 
-  .fc-height{
-  min-height: 0px !important;
-  max-height: 1000px;
-  left: 0;
-  top: 0px;
-}
+  .transform-scale-1-2 {
+    transform: scale(1);
+  }
 
-  .pe-70{
+  .fc-height {
+    min-height: 0px !important;
+    max-height: 1000px;
+    left: 0;
+    top: 0px;
+  }
+
+  .pe-70 {
     padding-right: 0px !important;
   }
 
