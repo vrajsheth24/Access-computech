@@ -7753,7 +7753,8 @@ textarea.form-control-lg {
   min-height: 100vh !important;
 }
 .min-vh-80 {
-  min-height: 80vh !important;
+  height: 80vh !important;
+  max-height: 800px !important;
 }
 
 .flex-fill {

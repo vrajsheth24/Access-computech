@@ -6951,7 +6951,7 @@ input:focus {
 .intro2-content__title {
   color: var(--white);
   font-family: "Epilogue", serif;
-  font-size: 60px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 65px;
@@ -18837,7 +18837,7 @@ input:focus {
   height: 130px;
   background-image: url(../images/access-computech/icon/power.svg);
   background-size: contain;
-  z-index: 1;
+  z-index: 0;
 }
 
 .product-features.tough::before {
@@ -18863,7 +18863,7 @@ input:focus {
   background-image: url(../images/access-computech/icon/tough.png);
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 0;
 }
 
 .product-features.versatile::before {
@@ -18903,6 +18903,30 @@ input:focus {
   z-index: 0;
   background-repeat: no-repeat;
 }
+.product-features.all-day::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  width: 180px;
+  height: 80%;
+  background-image: url(../images/access-computech/product/pos/f300/energy.png);
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+.product-features.hd-display::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  width: 180px;
+  height: 80%;
+  background-image: url(../images/access-computech/product/pos/f310/hd.png);
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
 
 .product-features.card-swipe::before {
   content: "";
@@ -18924,6 +18948,42 @@ input:focus {
   width: 150px;
   height: 100%;
   background-image: url(../images/access-computech/product/pos/f210/reload.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product-features.rugged-f300::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 30px;
+  width: 150px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/pos/f300/water-resistant.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product-features.powerful::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 30px;
+  width: 150px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/pos/f310/cpu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product-features.sd-card::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  width: 130px;
+  height: 100%;
+  background-image: url(../images/access-computech/product/pos/f310/sd-card.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -19506,6 +19566,39 @@ input:focus {
   width: 80px;
 }
 
+.product-features h5, .product-features p{
+  position: relative;
+  z-index: 1 !important;
+}
+
+.w-lg-50{
+  width: 50% !important;
+}
+
+.color-box{
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+  border-radius: 75px;
+}
+
+.color-box.color-1{
+  background-color: #4E738A;
+}
+
+.color-box.color-2{
+  background-color: #FFB71B;
+}
+
+.color-box.color-3{
+  background-color: #323E48;
+}
+.color-box.color-4{
+  background-color: #FF99CC;
+}
+.color-box.color-5{
+  background-color: #FF595A;
+}
 
 
 @media screen and (max-width: 1399px) {
@@ -19558,7 +19651,12 @@ input:focus {
 }
 
 @media screen and (max-width: 991px) {
-
+  .w-lg-50{
+    width: 100% !important;
+  }
+  .w-60{
+    width: 100% !important;
+  }
   .mb--60{
     margin-bottom: 0;
   }
@@ -20167,4 +20265,228 @@ input:focus {
 
 
 
+}
+
+.service-c-image{
+  margin-top: -350px;
+}
+
+.btn-custom-pill {
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 45px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-text-cyan {
+  color: #18D4F5;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.btn-custom-pill:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  background-color: var(--access-blue);
+  color: #fff;
+}
+
+/* core service section  */
+
+.access-core-services-section {
+  /* background-color: #f3f3f3; */
+  padding: 80px 0;
+}
+
+.access-core-main-heading {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--access-blue);
+  margin-bottom: 20px;
+}
+
+.access-core-divider-line {
+  height: 1px;
+  background-color: #cfcfcf;
+  margin-bottom: 60px;
+}
+
+.access-service-row {
+  margin-bottom: 60px;
+}
+
+.access-service-number {
+  font-size: 48px;
+  font-weight: 300;
+  color: #cfcfcf;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.access-service-image-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.access-service-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.access-service-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.access-service-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.access-service-btn:hover {
+  background-color: var(--access-blue);
+  color: #fff;
+}
+
+.access-row-divider {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 50px 0;
+}
+
+.access-service-content {
+  padding-left: 130px; 
+}
+
+.access-service-row {
+  align-items: flex-start;
+}
+
+.access-service-image {
+  max-width: 70%;
+  height: auto;
+}
+
+
+
+
+.access-why-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.access-why-heading {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.access-why-subtext {
+  font-size: 18px;
+  color: #fff;
+}
+
+.access-why-stat-number {
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.access-why-stat-text {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.access-why-grid {
+  margin-top: 80px;
+}
+
+.access-why-grid-bottom {
+  margin-top: 100px;
+}
+
+.access-why-item h4 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.access-why-item p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.access-why-line {
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.access-why-stat {
+  margin-top: 100px;
+}
+
+.certi-box{
+  margin-left: 200px;
+}
+
+.fast-box{
+  margin-top: -50px;
+}
+
+
+
+
+.access-apply-section {
+  background-color: #f3f3f3;
+  padding: 100px 0;
+}
+
+.access-apply-heading {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #000;
+}
+
+.access-apply-row {
+  margin-bottom: 40px;
+}
+
+.access-apply-card {
+  background-color: #e9e9e9;
+  padding: 50px 50px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
+  color: #111;
+}
+.global-header4-header-button .btn-wrapper{
+  align-content: center;
+}
+
+.ideal-for.service p{
+  font-size: 22px;
+  line-height: 1.3;
 }
