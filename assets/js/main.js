@@ -3,12 +3,22 @@
 
   $(document).ready(function () {
 
-    fetch("footer.html")
+    
+    fetch("/Dev/accesscomputech/L4/header-blog.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-menu-blog").innerHTML = data;
+
+        $(".global-menu-wrapper").etmobilemenu();
+      });
+
+    fetch("/Dev/accesscomputech/L4/footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;
       });
-    fetch("../footer.html")
+      
+    fetch("/Dev/accesscomputech/L4/footer-blog.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer1").innerHTML = data;

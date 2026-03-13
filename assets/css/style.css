@@ -1,0 +1,397 @@
+.custom-box {
+  background-color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.custom-box h5 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.contact-box-wrapper1 {
+  padding-bottom: 80px;
+}
+
+.cta5-card__title {
+  color: var(--white);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.feature-item h4 {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-light-gray {
+  background-color: #d9d9d9;
+  min-width: 180px;
+}
+
+.bg-light-gray span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.bg-terminal-card {
+  background-color: #F2F2F2;
+  min-width: 180px;
+}
+
+.w-120 {
+  width: 120px;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.bg-cta {
+  background-color: #D7D7D7;
+}
+
+.design-box {
+  background-color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.design-box h5 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.status-pill {
+  background-color: #d9d9d9;
+  padding: 1.5rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 180px;
+  line-height: 1.2;
+}
+
+.border-cta {
+  border: 2px solid #AEAEAE;
+}
+
+.device-img1 {
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.contractor-card {
+  background-color: #f2f2f2;
+}
+
+.contractor-card p {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.ml-45 {
+  margin-left: 45px;
+}
+
+.text-blue {
+  color: #34aadc;
+}
+
+.bg-blue {
+  background-color: #34aadc;
+}
+
+.ears-box {
+  background-color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.ears-box h5 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.genetec-box {
+  background-color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.genetec-box h5 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.integration-icon {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.contract-icon {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.contract-para {
+  font-size: 30px;
+  line-height: 1.3;
+  margin-top: 10px;
+  color: #000;
+}
+
+.contract-para1 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 10px;
+  color: #000;
+}
+
+.feature-card {
+  background-color: #f4f4f4;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.feature-card h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.feature-card p {
+  color: #444;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.rd-services-section {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+
+.feature-item {
+  border-bottom: 2px solid #2BA1E1;
+  align-items: flex-start;
+}
+
+.feature-item.no-border {
+  border-bottom: none;
+}
+
+.feature-heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.feature-text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.level-title {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.text-content {
+  font-size: 28px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.blue-divider {
+  border-top: 1px solid #70c1e3;
+  margin: 3rem 0;
+  opacity: 1;
+}
+
+.compliance-header p {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.key-capabilities-row p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.built-para {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.built-heading {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.capability-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 320px;
+  margin-bottom: 4rem;
+}
+
+.cta-heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-heading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.bi-directional-para {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contractor-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contractor-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.contractor-card li {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.workforce-service-btn {
+  background-color: #000;
+  font-size: 24px;
+  color: #fff;
+  padding: 8px 18px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.workforce-service-btn:hover {
+  background-color: var(--access-blue);
+  color: #fff;
+}
+
+.section-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.storm-card {
+  background-color: #f4f5f5;
+  padding: 48px 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.storm-card h5 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.storm-card p {
+  margin-bottom: 0;
+  color: #333;
+  max-width: 90%;
+}
+
+.access-service-image-wrapper img {
+  border-radius: 20px;
+}
+
+.access-service-image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.fingerprint-device-img {
+  height: 100px;
+  width: auto;
+}
+
+.sdk-img {
+  height: 150px;
+  width: auto;
+}
+
+.mobile-label {
+  display: none;
+}
