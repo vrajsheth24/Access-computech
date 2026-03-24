@@ -4,7 +4,7 @@
   $(document).ready(function () {
 
     
-    fetch("/Dev/accesscomputech/L4/header-blog.html")
+    fetch("../header-blog.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("header-menu-blog").innerHTML = data;
@@ -12,17 +12,36 @@
         $(".global-menu-wrapper").etmobilemenu();
       });
 
-    fetch("/Dev/accesscomputech/L4/footer.html")
+    fetch("footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;
       });
       
-    fetch("/Dev/accesscomputech/L4/footer-blog.html")
+    fetch("../footer-blog.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer1").innerHTML = data;
       });
+    // fetch("/Dev/accesscomputech/L4/header-blog.html")
+    //   .then(response => response.text())
+    //   .then(data => {
+    //     document.getElementById("header-menu-blog").innerHTML = data;
+
+    //     $(".global-menu-wrapper").etmobilemenu();
+    //   });
+
+    // fetch("/Dev/accesscomputech/L4/footer.html")
+    //   .then(response => response.text())
+    //   .then(data => {
+    //     document.getElementById("footer").innerHTML = data;
+    //   });
+      
+    // fetch("/Dev/accesscomputech/L4/footer-blog.html")
+    //   .then(response => response.text())
+    //   .then(data => {
+    //     document.getElementById("footer1").innerHTML = data;
+    //   });
 
 
     /*---------- Mobile Menu  ----------*/

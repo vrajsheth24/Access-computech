@@ -137,7 +137,8 @@
                             <div class=" d-none d-xl-block text-end">
                                 <div class="global-header4-header-button d-flex h-100 align-items-center">
                                     <div class="btn-wrapper">
-                                        <a class="theme-btn style5 " href="#">Buy Aadhaar L1 Devices</a>
+                                        <a class="theme-btn style5 " href="https://www.acpl.in.net/" target="_blank">Buy
+                                            Aadhaar L1 Devices</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,21 +155,30 @@
     <section class="service-list2 section-padding pt-150 fix">
         <div class="container">
             <div class="section-title pt-80 mb-50 case-div">
-                <div class="row align-items-end gx-80">
+                <div class="row align-items-end justify-content-between gy-lg-0 gy-4 gx-80">
                     <div class="col-lg-6">
                         <h2 class="section-title__title fw-semibold blog-txt">
                             The Access Library</h2>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="filter-dropdown">
+                            <!-- <label for="categoryFilter" class="fw-semibold">Filter by Category:</label> -->
+                            <select id="categoryFilter" class="form-select mb-0 contact6-input__form-control">
+                                <option value="all">All Categories</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="row gx-xxl-5 gx-4 gy-5 blogs-section" id="blogContainer"></div>
+            <div class="row gx-xxl-5 gx-4 gy-lg-5 gy-3 blogs-section" id="blogContainer"></div>
 
         </div>
     </section>
 
-    
+
 
 
 
@@ -469,40 +479,69 @@
         ];
 
         const blogContainer = document.getElementById("blogContainer");
+        const categoryFilter = document.getElementById("categoryFilter");
 
-        blogs.forEach(blog => {
-            const blogHTML = `
-                <div class="col-xl-4 col-md-6 pb-xl-0 pb-3">
-                    <a href="${blog.link}">
-                        <div class="blog3-card h-100">
-                        <div class="blog3-card__thumb hover-img">
-                            <img src="${blog.img}" alt="thumb">
-                        </div>
-                        <div class="blog3-card__content">
-                            <div class="blog3-card__content-meta">
-                            <span class="text-black">${blog.date}</span>
-                            </div>
-                            <h3>
-                            <a class="blog3-card__content-title" href="${blog.link}">
-                                ${blog.title}
-                            </a>
-                            </h3>
-                            <p class="blog-desc">${blog.desc}</p>
-                            <div class="blog3-card__content-btn-wrapper">
-                            <a class="theme-btn blog-btn" href="${blog.link}">
-                                <span>
-                                <img class="svg-img bg-white"
-                                    src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow">
-                                </span>
-                            </a>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                </div>
-            `;
-            blogContainer.insertAdjacentHTML("beforeend", blogHTML);
+        // Get unique categories
+        const categories = [...new Set(blogs.map(blog => blog.category).filter(Boolean))];
+
+        // Populate dropdown with categories
+        categories.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            categoryFilter.appendChild(option);
         });
+
+        function renderBlogs(filteredBlogs) {
+            blogContainer.innerHTML = '';
+            filteredBlogs.forEach(blog => {
+                const blogHTML = `
+                    <div class="col-xl-4 col-md-6 pb-xl-0 pb-3">
+                        <a href="${blog.link}">
+                            <div class="blog3-card h-100">
+                            <div class="blog3-card__thumb hover-img">
+                                <img src="${blog.img}" alt="thumb">
+                            </div>
+                            <div class="blog3-card__content">
+                                <div class="blog3-card__content-meta">
+                                <span class="text-black">${blog.date}</span>
+                                </div>
+                                <h3>
+                                <a class="blog3-card__content-title" href="${blog.link}">
+                                    ${blog.title}
+                                </a>
+                                </h3>
+                                <p class="blog-desc">${blog.desc}</p>
+                                <div class="blog3-card__content-btn-wrapper">
+                                <a class="theme-btn blog-btn" href="${blog.link}">
+                                    <span>
+                                    <img class="svg-img bg-white"
+                                        src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow">
+                                    </span>
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                blogContainer.insertAdjacentHTML("beforeend", blogHTML);
+            });
+        }
+
+        function filterBlogs() {
+            const selectedCategory = categoryFilter.value;
+            let filtered = blogs;
+            if (selectedCategory !== 'all') {
+                filtered = blogs.filter(blog => blog.category === selectedCategory);
+            }
+            renderBlogs(filtered);
+        }
+
+        categoryFilter.addEventListener('change', filterBlogs);
+
+        // Initial render
+        filterBlogs();
     </script>
 
 </body>

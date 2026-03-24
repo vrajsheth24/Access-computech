@@ -12,12 +12,16 @@
     }
 
     .fs-24 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .access-service-title {
         padding-top: 20px;
-        font-size: 24px;
+        font-size: 22px !important;
+    }
+
+    .access-content-service p{
+        font-size: 16px !important;
     }
 
     .bi-directional-para {
@@ -57,18 +61,25 @@
     .access-core-services-section {
         padding: 40px 0;
     }
-
-    .intro4-content {
-        padding: 0;
+    .contract-para1{
+        font-size: 18px;
     }
+
+    .capability-text{
+        max-width: 100%;
+    }
+
+    /* .intro4-content {
+        padding: 0;
+    } */
 
     .pb-100 {
         padding-bottom: 50px;
     }
 
-    .fs-36 {
+    /* .fs-36 {
         font-size: 20px !important;
-    }
+    } */
 
     .pb-5 {
         padding-bottom: 20px !important;
@@ -108,7 +119,7 @@
     }
 
     .ears-box h5 {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .fs-48 {
@@ -207,16 +218,20 @@
     }
 
     .fs-sm-20{
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
-    .row > *{
+    /* .row > *{
         margin-top: 20px;
-    }
+    } */
 
     .product-features.capture::before{
         top: 20px;
     }
+    .pb-70{
+        padding-bottom: 40px !important;
+    }
+    
 }
 
 @media screen and (max-width: 991px) {
@@ -242,7 +257,7 @@
     }
 
     .lh-sm-40{
-        line-height: 40px;
+        line-height: 1.3;
     }
 }
 
