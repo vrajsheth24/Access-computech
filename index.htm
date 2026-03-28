@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Website Under Maintenance</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+
+            .bgimg::after {
+                content: ' ';
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000000ba;
+            }
+
+      
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            z-index: 999;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 999;
+        }
+
+            .middle h1 {
+                font-size: 28px;
+            }
+
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimg">
+        <div class="topleft">
+        </div>
+        <div class="middle">
+            <h1>Website Under Maintenance</h1>
+            <hr>
+        </div>
+        <div class="bottomleft">
+        </div>
+    </div>
+</body>
+</html>

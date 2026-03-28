@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/splitting.css">
   <link rel="stylesheet" href="assets/css/main.css">
+<<<<<<< HEAD
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -34,6 +35,16 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJQ73L63" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+=======
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+
+<body>
+
+>>>>>>> master
   <!-- <div id="preloader" class="preloader">
         <div class="animation-preloader">
             
@@ -174,7 +185,11 @@
                       you may have.</p>
                   </div>
                   <div class="contact-link text-center">
+<<<<<<< HEAD
                     <a href="#">Request Demo <span><img class="svg-img"
+=======
+                    <a href="mailto:sales@acpl.ind.in">Request Demo <span><img class="svg-img"
+>>>>>>> master
                           src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow"></span></a>
                   </div>
                 </div>
@@ -186,7 +201,11 @@
                       with our sales team.</p>
                   </div>
                   <div class="contact-link text-center">
+<<<<<<< HEAD
                     <a href="#">Speak with Sales <span><img class="svg-img"
+=======
+                    <a href="mailto:sales@acpl.ind.in">Speak with Sales <span><img class="svg-img"
+>>>>>>> master
                           src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow"></span></a>
                   </div>
                 </div>
@@ -198,7 +217,11 @@
                       happy to help.</p>
                   </div>
                   <div class="contact-link text-center">
+<<<<<<< HEAD
                     <a href="#">Customer Support <span><img class="svg-img"
+=======
+                    <a href="mailto:support@acpl.ind.in">Customer Support <span><img class="svg-img"
+>>>>>>> master
                           src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow"></span></a>
                   </div>
                 </div>
@@ -210,7 +233,11 @@
                       systems, get in touch.</p>
                   </div>
                   <div class="contact-link text-center">
+<<<<<<< HEAD
                     <a href="#">Become a Reseller <span><img class="svg-img"
+=======
+                    <a href="mailto:sales@acpl.ind.in">Become a Reseller <span><img class="svg-img"
+>>>>>>> master
                           src="assets/images/access-computech/icon/blog-arrow.png" alt="arrow"></span></a>
                   </div>
                 </div>
@@ -262,7 +289,12 @@
         <div class="col-lg-6">
           <div class="contact6-input pt-0 img-custom-anim-left ">
 
+<<<<<<< HEAD
             <form action="#" id="contact-form" method="POST" class="contact6-input__form">
+=======
+            <form action="contact.php" id="contact-form" method="POST" class="contact6-input__form"
+              onsubmit="return validateForm();">
+>>>>>>> master
               <div class="row">
                 <div class="col-xl-6">
                   <input class="contact6-input__form-control" type="text" name="fname" id="fname"
@@ -273,6 +305,7 @@
                     placeholder="Last Name">
                 </div>
                 <div class="col-xl-6">
+<<<<<<< HEAD
                   <input class="contact6-input__form-control" type="email" name="email" id="email"
                     placeholder="Email Address">
                 </div>
@@ -282,11 +315,29 @@
                 </div>
                 <div class="col-xl-12">
                   <input class="contact6-input__form-control" type="email" name="subject" id="subject"
+=======
+                  <input class="contact6-input__form-control" type="text" name="email" id="email"
+                    placeholder="Email Address">
+                </div>
+                <div class="col-xl-6">
+                  <input class="contact6-input__form-control" type="text" name="phone" id="phone"
+                    placeholder="Phone (Optional)">
+                </div>
+                <div class="col-xl-12">
+                  <input class="contact6-input__form-control" type="text" name="subject" id="subject"
+>>>>>>> master
                     placeholder="Subject">
                 </div>
               </div>
               <textarea class="contact6-input__form-control" name="message" id="message"
                 placeholder="Message here.."></textarea>
+<<<<<<< HEAD
+=======
+              <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6Lepkq8rAAAAAPxVO4ZTfJo-mIxufuxwyMQXPoQz">
+                </div>
+              </div>
+>>>>>>> master
               <div class="contact6-input__btn justify-content-end d-flex">
                 <button class="theme-btn style1 submit-btn w-auto" type="submit">Submit</button>
               </div>
@@ -325,6 +376,43 @@
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
 
+<<<<<<< HEAD
+=======
+  <script>
+    function captachValidation() { var recaptchaResponse = grecaptcha.getResponse(); console.log(recaptchaResponse); if (!recaptchaResponse) { alert('Please complete the reCAPTCHA.'); return !1 } else { document.getElementById('g-recaptcha-response').value = recaptchaResponse; return !0 } }
+    function validateForm() {
+      var firstNameElement = document.getElementById("fname");
+      var lastnameElement = document.getElementById("lname");
+      var emailElement = document.getElementById("email");
+      var phoneElement = document.getElementById("phone");
+      var subjectElement = document.getElementById("subject");
+      var messageElement = document.getElementById("message");
+
+      var fname = firstNameElement.value.trim();
+      var lname = lastnameElement.value.trim();
+      var email = emailElement.value.trim();
+      var phone = phoneElement.value.trim();
+      var subject = subjectElement.value.trim();
+      var message = messageElement.value.trim();
+
+      var count = 0;
+      if (fname === '') { alert('First Name is required'); count++; firstNameElement.focus(); return !1 }
+      if (lname === '') { alert('Last Name is required'); count++; lastnameElement.focus(); return !1 }
+      if (email === "") { alert("Email is required"); count++; emailElement.focus(); return !1 }
+      if (!validateEmail(email)) { alert("Invalid email format"); count++; emailElement.focus(); return !1 }
+      // if (phone === '') { alert("Phone Number is required"); count++; phoneElement.focus(); return !1 }
+      if (phone !== '') { if (!validatePhone(phone)) { alert("Invalid Phone Format"); count++; phoneElement.focus(); return !1 } }
+
+      if (subject === "") { alert("Subject is required"); count++; subjectElement.focus(); return !1 }
+      if (message === '') { alert("Message is required"); count++; messageElement.focus(); return !1 }
+      var temp = captachValidation()
+      if (count > 0 || temp === !1) { return !1 } else { return !0 }
+    }
+    function validateEmail(email) { var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; return emailRegex.test(email) }
+    function validatePhone(telephone) { var phoneRegex = /^\+?[0-9\s\-()]{10,15}$/; return phoneRegex.test(telephone) }
+  </script>
+
+>>>>>>> master
 </body>
 
 </html>

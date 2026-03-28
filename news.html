@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/splitting.css">
     <link rel="stylesheet" href="assets/css/main.css">
+<<<<<<< HEAD
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -59,6 +60,14 @@
 
     <!-- <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div> -->
+=======
+
+</head>
+
+<body>
+
+    
+>>>>>>> master
 
     <button id="back-top" class="back-to-top">
         <i class="fa-solid fa-chevron-up"></i>
@@ -154,15 +163,37 @@
     <section class="service-list2 pb-100 pt-150 fix">
         <div class="container">
             <div class="section-title mb-50 case-div">
+<<<<<<< HEAD
                 <div class="row align-items-end gx-80">
+=======
+                <div class="row align-items-end justify-content-between gx-80">
+>>>>>>> master
                     <div class="col-lg-6">
                         <h2 class="section-title__title fw-semibold blog-txt">
                             Access In The News</h2>
                     </div>
+<<<<<<< HEAD
 
                 </div>
             </div>
             <div class="row gx-lg-5 gy-lg-4 gy-3">
+=======
+                    <div class="col-lg-3">
+                        <div class="filter-dropdown">
+                            <select id="categoryFilter" class="form-select mb-0 contact6-input__form-control">
+                                <option value="all"><b>All Categories</b></option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row gx-xxl-5 gx-4 gy-lg-5 gy-3 blogs-section" id="newsContainer"></div>
+
+            <!-- <div class="row gx-lg-5 gy-lg-4 gy-3">
+>>>>>>> master
                 <div class="col-lg-4 col-md-6">
                     <a class="pb-3" href="blog/15-oct-2025.html">
                         <div class="pb-3">
@@ -274,7 +305,11 @@
                 </div>
 
 
+<<<<<<< HEAD
             </div>
+=======
+            </div> -->
+>>>>>>> master
         </div>
     </section>
 
@@ -319,6 +354,121 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+<<<<<<< HEAD
+=======
+    <script>
+        const blogs = [
+            {
+                "date": "October 15, 2025",
+                "link": "blog/15-oct-2025.html",
+                "title": "How Access Helped Build a Universal RD for Secure Testing and Integration",
+                "img": "assets/images/access-computech/blogs/2025/October-2025/15-Oct-2025/banner-image.jpg",
+                "category": ["News", "Biometrics Systems"]
+            },
+            {
+                "date": "October 8, 2025",
+                "link": "blog/8-oct-2025.html",
+                "title": "Access Computech Honoured at UIDAI Samvaad 2025 for Contributions to the Aadhaar Sandbox",
+                "img": "assets/images/access-computech/blogs/2025/October-2025/8-Oct-2025/banner-image.jpg",
+                "category": ["News", "Biometrics Systems"]
+            },
+            {
+                "date": "March 5, 2025",
+                "link": "blog/5-march-2025.html",
+                "title": "Our experience at MOSIP Connect 2025 - 3 Days in Manila!",
+                "img": "assets/images/access-computech/blogs/2025/March-2025/5-March-2025/banner-image.jpg",
+                "category": ["News", "Biometrics Systems"]
+            },
+            {
+                "date": "February 19, 2025",
+                "link": "blog/19-feb-2025.html",
+                "title": "Access Computech Joins Hands with Vadodara Marathon to Honor the Nation’s Jawans",
+                "img": "assets/images/access-computech/blogs/2025/February-2025/19-Feb-2025/banner-image.jpg",
+                "category": ["News"]
+            },
+            {
+                "date": "January 22, 2025",
+                "link": "blog/22-jan-2025.html",
+                "title": "Access Computech Wins Exim Club's Best IT Company of the Year 2024 Award",
+                "img": "assets/images/access-computech/blogs/2025/January-2025/22-Jan-2025/banner-image.jpg",
+                "category": ["News", "Biometrics Systems", "Payments Systems", "Attendance Management", "Access Control"]
+            },
+            {
+                "date": "November 27, 2024",
+                "link": "blog/27-nov-2024.html",
+                "title": "Access Computech Among India’s Top Payment Services 2024",
+                "img": "assets/images/access-computech/blogs/2024/November-2024/27-Nov-2024/banner-image.jpg",
+                "category": ["News", "Payments Systems"]
+            }
+           
+        ];
+
+        const blogContainer = document.getElementById("newsContainer");
+        const categoryFilter = document.getElementById("categoryFilter");
+
+        // Get unique categories
+        // const categories = [...new Set(blogs.map(blog => blog.category).filter(Boolean))];
+        const categories = [
+            ...new Set(
+                blogs.flatMap(blog => blog.category || [])
+            )
+        ];
+
+        // Populate dropdown with categories
+        categories.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            categoryFilter.appendChild(option);
+        });
+
+        function renderBlogs(filteredBlogs) {
+            blogContainer.innerHTML = '';
+            filteredBlogs.forEach(blog => {
+                const blogHTML = `
+
+                <div class="col-lg-4 col-md-6">
+                    <a class="pb-3" href="${blog.link}">
+                        <div class="pb-3">
+
+                            <div class="case-img p-0">
+                                <img src="${blog.img}"
+                                    class="br-0" alt="">
+                            </div>
+                            <div class="">
+                                <p class="news-date">${blog.date}</p>
+                                <h3 class="price4-card__title access-news fw-semibold text-black pb-2">
+                                    ${blog.title}
+                                </h3>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                `;
+                blogContainer.insertAdjacentHTML("beforeend", blogHTML);
+            });
+        }
+
+        function filterBlogs() {
+            const selectedCategory = categoryFilter.value;
+            let filtered = blogs;
+            if (selectedCategory !== 'all') {
+                // filtered = blogs.filter(blog => blog.category === selectedCategory);
+                filtered = blogs.filter(blog =>
+                    blog.category && blog.category.includes(selectedCategory)
+                );
+            }
+            renderBlogs(filtered);
+        }
+
+        categoryFilter.addEventListener('change', filterBlogs);
+
+        // Initial render
+        filterBlogs();
+    </script>
+
+>>>>>>> master
 </body>
 
 </html>
